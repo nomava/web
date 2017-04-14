@@ -9,7 +9,7 @@ export class Navbar extends Component {
       <div >
         <Grid>
           <Grid.Column width={3}>
-            <Menu fixed inverted vertical style={{height:'100vh'}}>
+            <Menu fixed="left" inverted vertical style={{height:'100vh'}}>
               <Menu.Item>
                 <Menu.Header>Music</Menu.Header>
 
