@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Icon, Header } from 'semantic-ui-react'
 
-class Genres extends Component {
+class Latest extends Component {
   render(){
     return (
       <div>
@@ -17,4 +17,4 @@ class Genres extends Component {
   }
 }
 
-export default Genres;
+export default Latest;
