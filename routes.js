@@ -1,7 +1,7 @@
 // routes.js
 import React, { Component } from 'react'
 import { Route, IndexRoute, Link } from 'react-router'
-import App from './app'
+import App from './app/'
 import Home from './app/views/home'
 import About  from './app/views/about'
 import Contact from './app/views/about/contact'
