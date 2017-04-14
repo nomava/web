@@ -14,14 +14,15 @@
     "history": "^1.14.0",
     "hogan-express": "^0.5.2",
     "lodash": "^3.10.1",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "react-router": "^1.0.3",
-    "semantic-ui-css": "^2.2.10",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
+    "react-router": "^1.0.1",
     "webpack": "^1.12.2"
   },
   "scripts": {
-    "development": "cp app/index.html public/index.html && NODE_ENV=development webpack && webpack-dev-server --content-base public/ --hot --inline --devtool inline-source-map --history-api-fallback"
+    "development": "cp app/index.html public/index.html && NODE_ENV=development webpack && webpack-dev-server --content-base public/ --hot --inline --devtool inline-source-map --history-api-fallback",
+    "production": "rm -rf public/index.html && NODE_ENV=development webpack -p && NODE_ENV=development node app.js",
+    "start": "npm run production"
   },
   "author": "",
   "license": "ISC",
