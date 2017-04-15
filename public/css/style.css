@@ -1,0 +1,27 @@
+.head-text h1{
+  font-weight:900;
+  font-size:10em;
+  font-family: 'Titillium Web', sans-serif;
+}
+.head-text{
+  border:none;
+}
+.head-Image{
+  background:url('assets/img/olothando-1.jpg') no-repeat center center;
+  background-size:cover;
+  height:30vh;
+}
+
+.main-control{
+  border:none;
+  transition: all 0.5s ease;
+  animation: .5s ease-out 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: Scale(1);
+  }
+}
