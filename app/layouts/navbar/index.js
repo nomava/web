@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Grid, Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react'
+import { Grid, Container, Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react'
 import { Link } from 'react-router'
+
 
 export class Navbar extends Component {
   constructor(props) {
@@ -22,7 +23,7 @@ export class Navbar extends Component {
     return (
       <div >
         <Grid>
-          <Grid.Column width={4}>
+          <Grid.Column width={3}>
             <Menu fixed="left" inverted vertical style={{width:'18rem'}}>
               <Menu.Item>
                 <Menu.Header color='white'>
@@ -85,6 +86,10 @@ export class Navbar extends Component {
                     <Icon name='forward' />
                   </Menu.Item>
                 </Menu>
+                <Button.Group labeled>
+                  <Button icon='repeat' content='repeat' />
+                  <Button icon='shuffle' content='Shuffle' />
+                </Button.Group>
               </Menu.Item>
               <Menu.Item>
                 <Menu.Header>Shop</Menu.Header>
@@ -117,8 +122,8 @@ export class Navbar extends Component {
               </Menu.Item>
             </Menu>
           </Grid.Column>
-          <Grid.Column center stretched width={12}>
-            <Segment>
+          <Grid.Column center stretched width={12} >
+            <Segment padded className="main-control">
               {this.props.children}
             </Segment>
           </Grid.Column>
