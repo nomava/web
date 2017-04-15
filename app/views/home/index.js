@@ -72,7 +72,7 @@ class Home extends Component {
             </Card.Content>
           </Card>
         </Card.Group>
-        <Segment textAlign='center'>
+        <Segment textAlign='center' inverted>
           <Header as='h2'>Who is Olothando ?</Header>
           <p> An Afro Soul Artist from the depths of the Eastern Cape... </p>
           </Segment>
