@@ -25,7 +25,12 @@ export class Navbar extends Component {
           <Grid.Column width={4}>
             <Menu fixed="left" inverted vertical style={{width:'18rem'}}>
               <Menu.Item>
-                <Menu.Header>Music</Menu.Header>
+                <Menu.Header color='white'>
+                  <Link to="/">
+                    <Icon name='home' />
+                    Home
+                  </Link>
+                </Menu.Header>
 
                 <Menu.Menu>
                   <Menu.Item>
@@ -112,7 +117,7 @@ export class Navbar extends Component {
               </Menu.Item>
             </Menu>
           </Grid.Column>
-          <Grid.Column stretched width={11}>
+          <Grid.Column center stretched width={12}>
             <Segment>
               {this.props.children}
             </Segment>
