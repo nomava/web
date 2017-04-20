@@ -73,14 +73,7 @@ export default class Find extends Component {
     const { isLoading, value, results } = this.state
 
     return (
-      <div>
-        <Header as='h2' icon textAlign='center'>
-          <Icon name='search' circular />
-          <Header.Content>
-            Search
-          </Header.Content>
-        </Header>
-        <Container textAlign='center'>
+       <div>
           <Search
             loading={isLoading}
             onResultSelect={this.handleResultSelect}
@@ -90,7 +83,6 @@ export default class Find extends Component {
             {...this.props}
             fluid
           />
-      </Container>
       </div>
     )
   }

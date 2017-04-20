@@ -1,11 +1,14 @@
-![header](https://github.com/SalmoneSolutions/krisp/blob/master/%23Krisp.png)
- **Local Music Streaming  Done Right.**
- 
- > *Krisp is the Premium version of the Kriss music streaming web app found at http://www.krissmusic.tk*
-  
-  
+# Nomava
+ **Xhosa Encylopedia**
+
+ > *For the preservation of Xhosa Knowledge and Wisdom*
+
+
  # For contributors only.
- 
+ > To contribute you will need to first setup a Node environment
+ > There after clone this repo and run the following commands
+
  -  `npm install`
- -  `npm install semantic-ui-react`
  -  `npm run development`
+
+This  Web App has been developed with React ,Webpack and Semantic UI
